@@ -5,8 +5,12 @@
     <classes>
       <class name="com.facebook23_loginTestWithPageFactory.PageFactoryRegistrationTest">
         <methods>
+          <include name="signupNewAccount"/>
+          <include name="signupNewAccount1"/>
+          <include name="closeApp"/>
           <include name="regressionSignupNewAccount"/>
           <include name="init"/>
+          <include name="regressionSignupNewAccount1"/>
         </methods>
       </class> <!-- com.facebook23_loginTestWithPageFactory.PageFactoryRegistrationTest -->
     </classes>

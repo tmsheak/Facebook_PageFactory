@@ -14,12 +14,13 @@ public class PageFactoryLoginTest {
 
 	@BeforeMethod
 	public void openApp() {
-		
+
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
+	
 
 	@Test
 	public void validUserNameTest() {

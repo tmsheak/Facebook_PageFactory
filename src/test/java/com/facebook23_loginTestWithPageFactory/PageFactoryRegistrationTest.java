@@ -16,15 +16,18 @@ public class PageFactoryRegistrationTest extends BaseTest {
 	public void init() {
 		driver = openApp(); // if you write openApp(); does not work
 		// Is-A Relationship with BaseTest
+		//driver=openChrome();
+		//driver=openEdge();
+		//driver=openFireFox();
 
 	}
 
-	@Test(priority = 0)
+	@Test
 	public void hello() {
 		System.out.println("Bismillah. Just starting to call methods.");
 	}
 
-	@Test(priority = 1)
+	@Test
 	public void signupNewAccount() {
 		// Implemented with "Select"
 		prp = new PageFactoryRegistrationPage(driver);
@@ -43,7 +46,7 @@ public class PageFactoryRegistrationTest extends BaseTest {
 
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void signupNewAccount1() {
 		prp = new PageFactoryRegistrationPage(driver);
 		prp.createNewAccount();
@@ -63,7 +66,7 @@ public class PageFactoryRegistrationTest extends BaseTest {
 		// prp.getSignUpButton();
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void regressionSignupNewAccount() {
 		// Implemented with "Select"
 		prp = new PageFactoryRegistrationPage(driver);
@@ -71,7 +74,7 @@ public class PageFactoryRegistrationTest extends BaseTest {
 
 	}
 
-	@Test(priority = 4)
+	@Test
 	public void regressionSignupNewAccount1() {
 		prp = new PageFactoryRegistrationPage(driver);
 		prp.signupRegression1("Amin", "Tarek", "Hahan@ail.com", "Hahan@mail.com", "pass2345");
